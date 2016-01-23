@@ -5,10 +5,12 @@ public class handle : MonoBehaviour {
 
 	public float speed = 10.0f;
 	Rigidbody rb;
+	ArduinoBridge arduino;
 
 	// Use this for initialization
 	void Start () {
 		rb = gameObject.GetComponent<Rigidbody>();
+		arduino = gameObject.GetComponent<ArduinoBridge> ();
 	}
 	
 	// Update is called once per frame
