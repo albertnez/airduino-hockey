@@ -148,7 +148,30 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5423058, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 13595340, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13697518, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 13613438, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 13531654, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 9506246, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 13594106, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 13595340, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 13642706, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 13697518, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+    - {fileID: 11469220, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &411334546
@@ -259,7 +282,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -661,7 +686,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -687,6 +714,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2076793984}
   m_RootOrder: 2
+--- !u!1 &1149632599 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 195722, guid: 67858c2a83ce14ff4b95532c3635a8ef, type: 2}
+  m_PrefabInternal: {fileID: 101563367}
+--- !u!114 &1149632603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149632599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf84572caf07f4a058dd03544e89327f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+--- !u!54 &1149632604
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149632599}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1265296100 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 153102, guid: 80718442faec64c47b47d82127d56526, type: 2}
@@ -794,7 +852,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -861,9 +921,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6501478, guid: 218ec84cc775148178b0e6a0fc0a2be0, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6501478, guid: 218ec84cc775148178b0e6a0fc0a2be0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 218ec84cc775148178b0e6a0fc0a2be0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2076793983
@@ -908,7 +969,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2076793983}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ced625850da449eb312092eabc0413, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ae30b1d5d1b2450fa59e8cc3e3654d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
