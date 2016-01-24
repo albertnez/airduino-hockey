@@ -37,7 +37,7 @@ public class ArmController : MonoBehaviour {
 		}
 		raw = arduino.ReadFromArduino (50);
 		if (raw != null) {
-			imuz = float.Parse (raw) * 360;
+			imuz = -float.Parse (raw) * 360;
 		} else {
 			anyNull = true;
 		}
