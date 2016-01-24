@@ -17,6 +17,9 @@ public class Enemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (disk == null) {
+			return;
+		}
 		float target = disk.transform.position.z - transform.position.z;
 		float targetX = disk.transform.position.x;
 		if (targetX > 0.0f) {
