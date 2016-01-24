@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: textMaterial
+  m_Name: playerText
   m_Shader: {fileID: 4800000, guid: 43735ca663b0f49b8b2a6961b5298b63, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 932e50258b77b4c61a7dd868da0e77a9, type: 3}
+          m_Texture: {fileID: 2800000, guid: 9e97fa7cd3a294180800621e9957cfe5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
